@@ -3,7 +3,7 @@
 ## Usage
 
 ```
-git clone git@bitbucket.org:hands-rec/sitemap_generator.git
+git clone git@github.com:hands-rec/ruby-env.git
 ```
 
 ```

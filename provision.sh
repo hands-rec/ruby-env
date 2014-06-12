@@ -22,12 +22,16 @@ gpgcheck = 1
 yum install -y git --enablerepo=rpmforge
 
 echo 'install ruby'
-git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
-mkdir -p ~/.rbenv/plugins
-git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.profile
-echo 'eval "$(rbenv init -)"' >> ~/.profile
-exec $SHELL -l
+yum install -y zlib-devel
+yum install -y openssl
+yum install -y openssl-devel
+#git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
+#mkdir -p ~/.rbenv/plugins
+#git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+#echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.profile
+#echo 'eval "$(rbenv init -)"' >> ~/.profile
+#exec $SHELL -l
+#source ~/.profile
 echo '
 Please execute the following command!!
 -------------------
